@@ -1,0 +1,22 @@
+<div class="container">
+
+    <app-cat *ngFor="let cat of cats | filterBreeds:term  ; let i = index" [cat]="cat"></app-cat>
+
+    <form [formGroup]="quantityForm" (ngSubmit)="submitQuantity()" class="quantity-form">
+      <input type="number" placeholder="Enter quantity" formControlName = 'title'>
+      <button type="submit">Submit</button>
+      <br>
+      <p *ngIf="quantityForm.value.title < 1 || quantityForm.value.title > 100" >Please enter number between 1-100<br>(default 10)</p>
+     </form>
+     
+    <div class="breed-group">
+      <input id="breed-input" [(ngModel)]="term" placeholder="Enter breed...">
+      <button id="breed-all" (click)="loadAll()" type="submit">See all breeds</button>
+    </div> 
+    <div class="breed-list">
+      <button id="breed-button" (click)="seeBreeds()">Breeds list</button>
+      <p id="breed-list" *ngIf="isBreeds"><span style="font-weight: bold;">All breeds:</span> {{this.allBreeds.join(', ')}} </p> 
+    </div>
+      
+    
+</div>

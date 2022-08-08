@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quantity-form{
+    position: fixed;
+    top: 100px;
+    left: 70%;
+}
+.quantity-form input{
+    width: 140px;
+    height: 20px;
+    padding: 10px 0px 10px 20px;
+    border: 3px solid #F3FFE3;
+    margin-right: 10px;
+    border-radius: 7px;
+    color: #3a66f5;
+}
+
+.quantity-form input::placeholder{
+    color: #3a66f5;
+}
+
+.quantity-form button{
+    color: #3a66f5;
+    height: 26px;
+    padding: 0px 10px;
+    background-color: #fff;
+    border: 3px solid #F3FFE3;
+    margin-right: 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.quantity-form button:hover{
+    border: 3px solid #3a66f5;
+}
+.quantity-form p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #fff; 
+}
+
+#breed-input{
+    width: 140px;
+    height: 20px;
+    padding: 10px 0px 10px 20px;
+    border: 3px solid #F3FFE3;
+    
+    margin-right: 25px;
+    border-radius: 7px;
+    color: #3a66f5;
+}
+
+#breed-input::placeholder{
+    color: #3a66f5;
+}
+
+#breed-button{
+    color: #3a66f5;
+   height: 26px;
+   padding: 0px 10px;
+   background-color: #fff;
+    border: 3px solid #F3FFE3;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+
+#breed-button:hover{
+    border: 3px solid #3a66f5;
+}
+
+#breed-list{
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 15px;
+    color: #3a66f5;
+}
+.breed-group{
+    position: fixed;
+    left: 70%;
+    top: 190px;
+}
+
+#breed-all{
+    color: #3a66f5;
+   height: 26px;
+   padding: 0px 10px;
+   background-color: #fff;
+    border: 3px solid #F3FFE3;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+#breed-all:hover{
+    border: 3px solid #3a66f5;
+}
+
+.breed-list{
+    position: fixed;
+    left: 70%;
+    top: 230px;
+    
+}

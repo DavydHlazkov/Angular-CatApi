@@ -1,0 +1,28 @@
+.cat-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 50px 0px 50px 50px;
+    border: 4px solid #fff;
+    color: #3a66f5;
+}
+
+.cat-photo{
+    max-width: 250px;
+    max-height: 220px;
+    padding: 10px;
+    border: 2px solid #fff;
+}
+
+.cat-des{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.cat-des h2{
+    margin-bottom: 10px;
+}
